@@ -13,4 +13,4 @@ def is_mult_of_x(number, divisor):
     return number % divisor == 0
 
 def both_ends(s):
- 
+    pass 
