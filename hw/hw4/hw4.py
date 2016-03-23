@@ -14,6 +14,9 @@ import hw4_solution
 #
 # returns: boolean
 
+def test_is_odd():
+    assert hw4_solution.is_odd(5) == True
+    assert hw4_solution.is_odd(6) == False
 
 
 # --------------------------------------------------------------------
@@ -29,6 +32,9 @@ import hw4_solution
 #
 # returns: boolean
 
+def test_is_even():
+    assert hw4_solution.is_even(6) == True
+    assert hw4_solution.is_even(7) == False
 
 
 # --------------------------------------------------------------------
@@ -44,6 +50,9 @@ import hw4_solution
 #
 # returns: boolean
 
+def test_is_mult_of_four():
+    assert hw4_solution.is_mult_of_four(8) == True
+    assert hw4_solution.is_mult_of_four(7) == False
 
 
 # --------------------------------------------------------------------
@@ -60,6 +69,9 @@ import hw4_solution
 #
 # returns: boolean
 
+def test_is_mult_of_x():
+    assert hw4_solution.is_mult_of_x(10, 5) == True
+    assert hw4_solution.is_mult_of_x(7, 6) == False
 
 
 # --------------------------------------------------------------------
@@ -75,3 +87,7 @@ import hw4_solution
 # - s
 #
 # returns: string
+
+def test_both_ends():
+    assert hw4_solution.both_ends("spring") == "spng"
+    assert hw4_solution.both_ends("b") == ""
