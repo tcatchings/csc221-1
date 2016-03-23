@@ -13,4 +13,9 @@ def is_mult_of_x(number, divisor):
     return number % divisor == 0
 
 def both_ends(s):
-    pass 
+    if len(s) < 2:
+        return ""
+    else:
+        newstring = (s[0:2] + s[-2:])
+        return newstring 
+
