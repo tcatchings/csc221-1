@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+
+from lab7_solution import (
+        ducklings,
+        count_letters,
+        reverse_string,
+        is_palindrome,
+)
+
+#from unittest import mock
+
 # --------------------------------------------------------------------
 # Unit Testing
 #
@@ -24,7 +35,8 @@
 # misspelled. Can you fix it?
 #
 
-
+#def test_ducklings():
+#    assert ducklings() == 
 
 # --------------------------------------------------------------------
 # Problem 2
@@ -39,7 +51,10 @@
 # Essentially, the function is returning the number of occurances of the
 # parameter char in the parameter string.
 
-
+def test_count_letters():
+    assert count_letters("bob","b") == 2
+    assert count_letters("shuttle","t") == 2
+    assert count_letters("shuttle","u") == 1
 
 # --------------------------------------------------------------------
 # Problem 3
@@ -49,7 +64,9 @@
 # Complete the following function such that it reverses the parameter
 # string.
 
-
+def test_reverse_string():
+    assert reverse_string("chuckle") == "elkcuhc"
+    assert reverse_string("jack") == "kcaj"
 
 # --------------------------------------------------------------------
 # Problem 4
@@ -60,3 +77,6 @@
 # given parameter, string, is a palindrome
 # 
 
+def test_is_palindromes():
+    assert is_palindrome("bob") == True
+    assert is_palindrome("chuckle") == False
