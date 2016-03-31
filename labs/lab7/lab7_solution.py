@@ -10,7 +10,7 @@ def ducklings():
 
 
 def count_letters(string, char):
-    count = 1
+    count = 0
     for c in string:
         if c==char:
             count += 1
@@ -20,12 +20,12 @@ def count_letters(string, char):
 def reverse_string(string):
     rev_string = ''
     for c in string:
-        rev_string = rev_string + c
+        rev_string = c + rev_string 
     return rev_string
 
 
 def is_palindrome(string):
-    if reverse_string == string:
+    if reverse_string(string) == string:
         return True
     else:
         return False
