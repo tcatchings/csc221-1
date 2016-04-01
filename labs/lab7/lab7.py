@@ -52,9 +52,14 @@ from lab7_solution import (
 # parameter char in the parameter string.
 
 def test_count_letters():
-    assert count_letters("bob","b") == 2
-    assert count_letters("shuttle","t") == 2
-    assert count_letters("shuttle","u") == 1
+    inputs = [
+            ("bob","b",2),
+            ("shuttle","t",2),
+            ("shuttle","u",1),
+    ]
+
+    for string, char, correct in inputs:
+        assert count_letters(string, char) == correct
 
 # --------------------------------------------------------------------
 # Problem 3
