@@ -46,6 +46,8 @@ def count_letters(string, char):
     '''
     >>> count_letters('battle','t')
     2
+    >>> count_letters('abcd','d')
+    1
     >>> count_letters('john','t')
     0
     '''
@@ -128,12 +130,12 @@ def match_ends(words):
 
 def front_x(words):
     '''
-    >>> front_x(['mix','apple','xavier','xi'])
-    ['xavier','xi','apple','mix']
-    >>> front_x(['banana','apple','battle','jack'])
-    ['apple','banana','battle','jack']
+    >>> front_x(['mix','apple','xavier','xi']) == ['xavier','xi','apple','mix']
+    True
+    >>> front_x(['banana','apple','battle','jack']) == ['apple','banana','battle','jack']
+    True
     '''
-    return sorted(filter(lambda w:w[0]=='x',words) +
+    return sorted(list(filter(lambda w:w[0]=='x',words)) +
                   list(set(words)-{w for w in words if w[0]=='x'}))
 
 
@@ -153,8 +155,8 @@ def front_x(words):
 
 def sort_last(tuples):
     '''
-    >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
-    [(2, 2), (1, 3), (3, 4 5), (1, 7)]
+    >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]) == [(2, 2), (1, 3), (3, 4 5), (1, 7)]
+    True
     '''
     return sorted(tuples,key=lambda o:o[int(1j**2).imag])
 
