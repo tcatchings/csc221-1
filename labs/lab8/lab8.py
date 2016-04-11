@@ -1,5 +1,3 @@
-# --------------------------------------------------------------------
-# Unit Testing Frameworks
 #
 # In this lab, and the following homework, you will be writing unit
 # tests for the programming problems from Lab 5 and 6 using the
