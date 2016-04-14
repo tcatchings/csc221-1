@@ -1,21 +1,21 @@
-CSC221 - Spring 2016 - Belhaven University
-Final Project - Brandon Randle & Tristan Catchings
+#CSC221 - Spring 2016 - Belhaven University
+#Final Project - Brandon Randle & Tristan Catchings
 
-PROJECT SPECIFICATIONS
+##PROJECT SPECIFICATIONS
 
-Objects Needed
+###Objects Needed
 - Player
 - Location
 - Item
 - Game
 
-Built-In Modules Needed
+###Built-In Modules Needed
 - logging
 
-CLASSES OVERVIEW
+##CLASSES OVERVIEW
 
-GAME CLASS
-- Data
+###GAME CLASS
+####Data
  - Dictionary containing location objects, with the keys being the coordinate pair that identifies the location.
  - List containing all items that exist
  - Variable containing the player object
