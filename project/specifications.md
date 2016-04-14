@@ -19,6 +19,7 @@
  - Dictionary containing location objects, with the keys being the coordinate pair that identifies the location.
  - List containing all items that exist
  - Variable containing the player object
+
 ####Methods
  - loadLocations
  - loadItems
@@ -34,6 +35,7 @@
 ####Data
  - List of all items in inventory
  - Variable with current location object reference
+
 ####Methods
  - moveLocation
  - createLocation
@@ -56,7 +58,6 @@
  - String with item name
  - String with item description
 
----
 
 ##CLASSES DETAILS
 
@@ -65,6 +66,7 @@
  - Dictionary with coordinate pairs as keys and location objects as elements.
  - List with all items
  - Variable with player object
+
 ####Methods
  - loadLocations
  - reads locations.game file
