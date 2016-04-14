@@ -1,5 +1,5 @@
-#CSC221 - Spring 2016 - Belhaven University
-#Final Project - Brandon Randle & Tristan Catchings
+###CSC221 - Spring 2016 - Belhaven University
+###Final Project - Brandon Randle & Tristan Catchings
 
 ##PROJECT SPECIFICATIONS
 
@@ -19,7 +19,7 @@
  - Dictionary containing location objects, with the keys being the coordinate pair that identifies the location.
  - List containing all items that exist
  - Variable containing the player object
-- Methods
+####Methods
  - loadLocations
  - loadItems
  - loadPlayer
@@ -30,11 +30,11 @@
  - beginGame
  - endGame
 
-PLAYER CLASS
-- Data
+###PLAYER CLASS
+####Data
  - List of all items in inventory
  - Variable with current location object reference
-- Methods
+####Methods
  - moveLocation
  - createLocation
  - examineLocation
@@ -44,30 +44,30 @@ PLAYER CLASS
  - viewInventory
  - help
 
-LOCATION CLASS
-- Data
+###LOCATION CLASS
+####Data
  - String with location name
  - String with location description
  - List of exits available
  - List of items in location
 
-ITEM CLASS
-- Data
+###ITEM CLASS
+####Data
  - String with item name
  - String with item description
 
 ---
 
-CLASSES DETAILS
+##CLASSES DETAILS
 
-GAME CLASS
-- Data
+###GAME CLASS
+####Data
  - Dictionary with coordinate pairs as keys and location objects as elements.
  - List with all items
  - Variable with player object
-- Methods
+####Methods
  - loadLocations
- -- reads locations.game file
+ - reads locations.game file
   - parses info (name, description, items, and exits)
   - creates a location object, initializing it with the data from the file
   - location object is added to dictionary
@@ -107,15 +107,15 @@ GAME CLASS
   - print farewell text
   - execute saveLocations, saveItems, and savePlayer
 
-PLAYER CLASS
-- Data
+###PLAYER CLASS
+####Data
  - List with item objects in inventory
  - Variable with current location reference
-- Methods
+####Methods
  - moveLocation(direction)
   - takes a parameter (direction) such as north, south, east, or west
   - if block with a statement for each direction that modifies the current location coordinates based on direction taken
-   - for instance, if NORTH was the direction, 1 would be added to the Y coordinate
+  - for instance, if NORTH was the direction, 1 would be added to the Y coordinate
   - calls examineLocation()
  - createLocation(direction)
   - creates a new location in the direction specified in the argument
@@ -125,12 +125,12 @@ PLAYER CLASS
   - prints the name, description, items, and exits for the players current location
  - grabItem(itemName)
   - iterate through items in the location.
-   - if an item is found that matches itemName, remove it from location list and add to player inventory
-   - if item is not found, print message saying that there is no such item here
+  - if an item is found that matches itemName, remove it from location list and add to player inventory
+  - if item is not found, print message saying that there is no such item here
  - dropItem(itemName)
   - iterate through items in player inventory
-   - if an item is found that matches itemName, remove it from player inventory and add to location list
-   - if an item is not found, print message saying that there is no such item held
+  - if an item is found that matches itemName, remove it from player inventory and add to location list
+  - if an item is not found, print message saying that there is no such item held
  - createItem()
   - creates a new item
   - takes name and description as input from user
@@ -140,8 +140,8 @@ PLAYER CLASS
  - help()
   - lists all commands available to player (help, createItem, createLocation, grab, drop, north, south, east, west, look, quit)
 
-LOCATION CLASS
-- Data
+###LOCATION CLASS
+####Data
  - name
   - name of current location
  - description
@@ -153,8 +153,8 @@ LOCATION CLASS
  - coordinates
   - coordinate pair of the location
 
-ITEM CLASS
-- Data
+###ITEM CLASS
+####Data
  - name
   - name of the item
  - description
