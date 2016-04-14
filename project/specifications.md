@@ -67,7 +67,7 @@ GAME CLASS
  - Variable with player object
 - Methods
  - loadLocations
-..- reads locations.game file
+ -- reads locations.game file
   - parses info (name, description, items, and exits)
   - creates a location object, initializing it with the data from the file
   - location object is added to dictionary
