@@ -1,9 +1,9 @@
-CSC221 - Spring 2016 - Belhaven University
-Final Project - Brandon Randle & Tristan Catchings
+###CSC221 - Spring 2016 - Belhaven University
+###Final Project - Brandon Randle & Tristan Catchings
 
-PROJECT REQUIREMENTS
+##PROJECT REQUIREMENTS
 
-This virtual world project has the following requirements:
+####This virtual world project has the following requirements:
 - The user must be able to view locations within the virtual world.
 - The user must be able to create new locations within the virtual world.
 - The user must be able to grab and drop items within the virtual world.
