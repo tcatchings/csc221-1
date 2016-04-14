@@ -111,6 +111,7 @@
 ####Data
  - List with item objects in inventory
  - Variable with current location reference
+
 ####Methods
  - moveLocation(direction)
   - takes a parameter (direction) such as north, south, east, or west
