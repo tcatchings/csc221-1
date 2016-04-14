@@ -1,5 +1,5 @@
-###CSC221 - Spring 2016 - Belhaven University
-###Final Project - Brandon Randle & Tristan Catchings
+#####CSC221 - Spring 2016 - Belhaven University
+#####Final Project - Brandon Randle & Tristan Catchings
 
 ##PROJECT REQUIREMENTS
 
